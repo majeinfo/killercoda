@@ -6,4 +6,6 @@
 - pod-error-4: container uses wrong UID & GID
 - pod-error-5: container cannot display the right index.html page
 - pod-error-6: container exceeds resource quota
-- pod-error-7: wrong initContainer command
+- pod-error-7: wrong initContainer command & how to use a ConfigMap
+- pod-error-8: wrong Deployment definition
+- pod-error-9: rogue hpa
