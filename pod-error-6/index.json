@@ -1,13 +1,13 @@
 {
-  "title": "Pod Error #5",
-  "description": "Fix the bug to make the Pod display the right page",
+  "title": "Pod Error #6",
+  "description": "Fix the bug to make the Pod run",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       { 
-        "title": "Make the Pod display the right page !", 
+        "title": "Make the Pod run !", 
 	"text": "step1/text.md",
         "foreground": "step1/foreground.sh",
         "background": "step1/background.sh",
@@ -19,7 +19,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "index.html", "target": "/tmp", "chmod": "+r"}
+	 {"file": "pod-web.yml", "target": "~/", "chmod": "+rw"}
       ]
     }
   },
