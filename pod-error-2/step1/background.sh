@@ -14,10 +14,10 @@ spec:
     resources:
       limits:
         memory: "128Mi"
-	cpu: "300"
+        cpu: "300"
       requests:
         memory: "128Mi"
-	cpu: "200"
+        cpu: "200"
   restartPolicy: Always
 EOF
 
