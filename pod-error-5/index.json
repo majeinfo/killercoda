@@ -18,7 +18,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "controlplane": [
+      "host01": [
         {"file": "assets/index.html", "target": "/tmp", "chmod": "+r"}
       ]
     }
