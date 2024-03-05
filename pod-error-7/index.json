@@ -12,6 +12,13 @@
         "foreground": "step1/foreground.sh",
         "background": "step1/background.sh",
         "verify": "step1/verify.sh"	
+      },
+      { 
+        "title": "Display the right content !", 
+	"text": "step2/text.md",
+        "foreground": "step2/foreground.sh",
+        "background": "step2/background.sh",
+        "verify": "step2/verify.sh"	
       }
     ],
     "finish": {
