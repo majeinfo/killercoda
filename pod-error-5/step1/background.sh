@@ -12,11 +12,11 @@ spec:
     imagePullPolicy: IfNotPresent
     name: web
     volumeMounts:
-      - name: document_root
+      - name: document-root
         mountPath: /tmp
   restartPolicy: Always
   volumes:
-    - name: document_root
+    - name: document-root
       hostPath:
         path: /usr/share/nginx/html
         type: Directory
