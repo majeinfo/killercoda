@@ -13,8 +13,8 @@ spec:
     name: web
     securityContext:
       privileged: false
-      runAsUser: nginx
-      runAsGroup: nginx
+      runAsUser: 104
+      runAsGroup: 107
   restartPolicy: Always
 EOF
 
