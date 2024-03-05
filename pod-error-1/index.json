@@ -1,0 +1,22 @@
+{
+  "title": "POD Error #1",
+  "description": "Fix the bug to make the POD run",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      { 
+        "title": "Make the POD run !", 
+	"text": "step1/text.md",
+        "verify": "step1/verify.sh"	
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
