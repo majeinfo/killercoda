@@ -1,3 +1,3 @@
 ### Kubernetes troubleshooting
 
-In this scenario you will try to make a POD run !
+In this scenario you will try to make a Pod run !
