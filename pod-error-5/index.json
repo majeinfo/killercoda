@@ -19,7 +19,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "assets/index.html", "target": "/tmp", "chmod": "+r"}
+        {"file": "index.html", "target": "/tmp", "chmod": "+r"}
       ]
     }
   },
