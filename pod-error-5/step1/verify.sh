@@ -6,7 +6,7 @@ if [ "$PHASE" != "Running" ]; then
 fi
 
 PODIP=$(kubectl get po web -o jsonpath='{.status.podIP}')
-curl "$PODIP" -O- | grep "Well done"
+curl "$PODIP" -o- | grep "Well done"
 if [ $? -ne 0 ]; then
 	exit 1
 fi
