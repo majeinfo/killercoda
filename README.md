@@ -6,3 +6,4 @@
 - pod-error-4: container uses wrong UID & GID
 - pod-error-5: container cannot display the right index.html page
 - pod-error-6: container exceeds resource quota
+- pod-error-7: wrong initContainer command
