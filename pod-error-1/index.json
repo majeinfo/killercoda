@@ -1,13 +1,15 @@
 {
-  "title": "POD Error #1",
-  "description": "Fix the bug to make the POD run",
+  "title": "Pod Error #1",
+  "description": "Fix the bug to make the Pod run",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "foreground": "foreground.sh",
+      "background": "background.sh"
     },
     "steps": [
       { 
-        "title": "Make the POD run !", 
+        "title": "Make the Pod run !", 
 	"text": "step1/text.md",
         "verify": "step1/verify.sh"	
       }
