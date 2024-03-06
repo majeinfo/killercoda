@@ -11,5 +11,6 @@
 - 009-deploy-error: rogue hpa
 - 010-pod-error: missing label on Node
 - 011-pod-error: missing toleraion on Pod
+- 012-pod-error: missing envvar (needs to get the logs)
 - 100-pod-error: upgrade priorityClassName
 - 101-pod-error: play with podAntiAffinity
