@@ -10,3 +10,4 @@
 - 008-deploy-error: wrong Deployment definition
 - 009-deploy-error: rogue hpa
 - 100-pod-error: upgrade priorityClassName
+- 101-pod-error: play with podAntiAffinity
