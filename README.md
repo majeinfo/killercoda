@@ -13,6 +13,7 @@
 - 011-pod-error: missing toleraion on Pod
 - 012-pod-error: missing envvar (needs to get the logs)
 - 013-ds-error: missing Pod in DaemonSet
+- 014-svc-error: wrong Service definition
 - 100-pod-error: upgrade priorityClassName
 - 101-pod-error: play with podAntiAffinity
 - 102-config-error: wrong Base64 secret
