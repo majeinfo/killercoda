@@ -10,5 +10,6 @@
 - 008-deploy-error: wrong Deployment definition
 - 009-deploy-error: rogue hpa
 - 010-pod-error: missing label on Node
+- 011-pod-error: missing toleraion on Pod
 - 100-pod-error: upgrade priorityClassName
 - 101-pod-error: play with podAntiAffinity
