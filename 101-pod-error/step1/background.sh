@@ -1,6 +1,7 @@
 # Wrong podAntiAffinity !
 
 NODE=$(kubectl get no -o jsonpath='{.items[0].metadata.name}')
+kubectl taint node "$NODE" node-role.kubernetes.io/control-plane:NoSchedule-
 
 cat <<EOF | kubectl apply -f -
 apiVersion: apps/v1
@@ -9,7 +10,6 @@ metadata:
   name: nginx
   namespace: default
 spec:
-  nodeName: "$NODE"
   progressDeadlineSeconds: 600
   replicas: 2
   revisionHistoryLimit: 10
@@ -26,6 +26,7 @@ spec:
       labels:
         app: nginx
     spec:
+      nodeName: "$NODE"
       containers:
       - image: nginx
         imagePullPolicy: Always
