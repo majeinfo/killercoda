@@ -8,5 +8,10 @@ spec:
   - image: nginx:1.8
     imagePullPolicy: IfNotPresent
     name: web
+    resources:
+      limits:
+        memory: 768Mi
+      requests:
+        memory: 768Mi
   restartPolicy: Always
 
