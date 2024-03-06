@@ -1,11 +1,12 @@
 # killercoda
 
-- pod-error-1: wrong Pod image name
-- pod-error-2: wrong Pod resources definition
-- pod-error-3: Pod does not support node taint
-- pod-error-4: container uses wrong UID & GID
-- pod-error-5: container cannot display the right index.html page
-- pod-error-6: container exceeds resource quota
-- pod-error-7: wrong initContainer command & how to use a ConfigMap
-- pod-error-8: wrong Deployment definition
-- pod-error-9: rogue hpa
+- 001-pod-error: wrong Pod image name
+- 002-pod-error: wrong Pod resources definition
+- 003-pod-error: Pod does not support node taint
+- 004-pod-error: container uses wrong UID & GID
+- 005-pod-error: container cannot display the right index.html page
+- 006-pod-error: container exceeds resource quota
+- 007-pod-error: wrong initContainer command & how to use a ConfigMap
+- 008-deploy-error: wrong Deployment definition
+- 009-deploy-error: rogue hpa
+- 100-pod-error: upgrade priorityClassName
