@@ -59,7 +59,9 @@ spec:
   ports:
     - port: 6379
       targetPort: 6379
-controlplane $ cat vote-pod.yml
+EOF
+
+cat <<EOF | kubectl apply -f -
 apiVersion: v1
 kind: Pod
 metadata:
@@ -107,6 +109,22 @@ spec:
   policyTypes:
     - Ingress
     - Egress
+EOF
+
+cat <<EOF | kubectl apply -f -
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-vote
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      role: vote
+  policyTypes:
+    - Ingress
+  ingress:
+    - {}
 EOF
 
 touch /tmp/finished
