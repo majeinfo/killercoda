@@ -18,3 +18,4 @@
 - 101-pod-error: play with podAntiAffinity
 - 102-config-error: wrong Base64 secret
 - 103-drain-error: cannot drain because of PDB+toleration missing
+- 104-netpol-error: a netpol denies access to the DB

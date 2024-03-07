@@ -1,0 +1,31 @@
+{
+  "title": "#104 - Cannot access the database ?",
+  "description": "Fix the configuration to allow the user to vote",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      { 
+        "title": "Fix the configuration !", 
+	"text": "step1/text.md",
+        "foreground": "step1/foreground.sh",
+        "background": "step1/background.sh",
+        "verify": "step1/verify.sh"	
+      },
+      { 
+        "title": "From Pod to Deployment !", 
+	"text": "step2/text.md",
+        "foreground": "step2/foreground.sh",
+        "background": "step2/background.sh",
+        "verify": "step2/verify.sh"	
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
