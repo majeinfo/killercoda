@@ -8,7 +8,7 @@ if [ $? -ne 0 ]; then
 fi
 
 curl -XPOST http://$SVC -d "option=a" | grep "500"
-if [ $? -ne 0 ]; then
+if [ $? -eq 0 ]; then
 	exit 1
 fi
 
