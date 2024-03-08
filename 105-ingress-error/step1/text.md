@@ -18,6 +18,7 @@ according to the "Host" HTTP Header.
 The following commands should work (but won't !) :
 
 $ curl -H vote1 <IP_of_vote1_service>
+
 $ curl -H vote2 <IP_of_vote2_service>
 
 Can you do it ?

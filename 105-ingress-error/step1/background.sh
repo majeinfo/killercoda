@@ -32,7 +32,8 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    role: vote1
+    role: vote
+    version: v1
   ports:
     - name: pythonapp
       port: 80
@@ -69,7 +70,8 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    role: vote1
+    role: vote
+    version: v1
   ports:
     - name: pythonapp
       port: 80
