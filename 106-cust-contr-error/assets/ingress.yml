@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: votes
+  namespace: default
+spec:
+  ingressClassName: ngnix
+  rules:
+    - host: vote1
+      http:
+        paths:
+          - path: /
+            pathType: prefix
+            backend:
+              service:
+                name: vote1
+                port: 80
+    - host: vote2
+      http:
+        paths:
+          - path: /
+            pathType: prefix
+            backend:
+              service:
+                name: vote2
+                port: 80

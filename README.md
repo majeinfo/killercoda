@@ -21,3 +21,4 @@
 - 103-drain-error: cannot drain because of PDB+toleration missing
 - 104-netpol-error: a netpol denies access to the DB
 - 105-ingress-error: wrong ingress rule and service
+- 106-custom-controller-error: wrong RBAC for cuscon
