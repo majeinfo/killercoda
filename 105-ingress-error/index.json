@@ -1,0 +1,29 @@
+{
+  "title": "#105 - Ingress Controller failure ?",
+  "description": "Fix the configuration of the Ingress Controller",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      { 
+        "title": "Fix the configurations !", 
+	"text": "step1/text.md",
+        "foreground": "step1/foreground.sh",
+        "background": "step1/background.sh",
+        "verify": "step1/verify.sh"	
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "ingress.yml", "target": "~/", "chmod": "+r"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
