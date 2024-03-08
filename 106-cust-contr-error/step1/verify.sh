@@ -2,6 +2,8 @@
 
 CMVALUE=$(kubectl get cm frontend-config -o jsonpath='{.data.config\.cfg}')
 VALUE=$(echo $CMVALUE | cut -d= -f2)
+# Remove the double-quotes
+VALUE=${VALUE:1:-1}
 if [ "$VALUE" = '"Welcome to Kubernetes"' ]; then
 	exit 1
 fi
@@ -12,7 +14,8 @@ while true; do
 	if [ "$POD" = "" ]; then
 		exit 1
 	fi
-	if [[ "$POD" =~ cuscon.* ]]; then
+	PREFIX=$(echo $POD | cut -d- -f1)
+	if [[ "$PREFIX" = "frontend" ]]; then
 		break
 	fi
 	IND=$[ $IND + 1]
