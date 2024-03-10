@@ -93,8 +93,8 @@ apiVersion: v1
 kind: Config
 clusters:
 - cluster:
-  certificate-authority-data: ${CLUSTER_CA}
-  server: https://172.30.1.2:6443
+    certificate-authority-data: ${CLUSTER_CA}
+    server: https://172.30.1.2:6443
   name: kubernetes
 users:
 - name: user1
@@ -105,8 +105,8 @@ contexts:
 - context:
     cluster: kubernetes
     user: user1
-    name: user1-kubernetes
-current-context: user1-kubernetes
+  name: kubernetes
+current-context: kubernetes
 EOF
 
 kubectl config set-credentials user1 --client-certificate=user1.crt --client-key=user1.key --embed-certs=true --kubeconfig=/home/user1/.kube/config
