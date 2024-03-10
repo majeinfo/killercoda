@@ -12,18 +12,17 @@ spec:
     command:
       - /bin/sh
       - -c
-      - cp
-      - /mnt/ca.key
-      - /tmp/
-      - "&&"
-      - chmod
-      - "644"
-      - /tmp/ca.key
+      - cp /mnt/ca.key /tmp/ && chmod 644 /tmp/ca.key
     volumeMounts:
       - name: pki
         mountPath: /mnt
       - name: tmp
         mountPath: /tmp
+  nodeName: controlplane
+  tolerations:
+    - key: ""
+      operator: Exists
+      effect: NoSchedule
   restartPolicy: Always
   volumes:
     - name: pki
