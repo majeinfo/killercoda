@@ -36,7 +36,7 @@ spec:
   request: |
 EOF
 
-cat user1.csr | sed 's/^/    /' >>csr.yml
+cat user1.csr | base64 | sed 's/^/    /' >>csr.yml
 
 cat <<EOF >>csr.yml
   usages:
@@ -46,6 +46,7 @@ cat <<EOF >>csr.yml
   - client auth
 EOF
 
+kubectl apply -f csr.yml
 kubectl certificate approve user1_csr
 kubectl get csr user1_csr -o jsonpath='{.status.certificate}' | base64 --decode > user1.crt
 kubectl create ns dev
