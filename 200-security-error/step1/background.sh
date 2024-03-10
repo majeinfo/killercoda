@@ -59,7 +59,7 @@ metadata:
   name: dev
 rules:
 - apiGroups: [""]
-  resources: ["pods", "services"]
+  resources: ["pods", "pods/log", "services"]
   verbs: ["create", "get", "update", "list", "delete"]
 - apiGroups: ["apps"]
   resources: ["deployments"]
@@ -73,7 +73,7 @@ metadata:
   name: dev
   namespace: dev
 subjects:
-- kind: Groupe
+- kind: Group
   name: dev
   apiGroup: rbac.authorization.k8s.io
 roleRef:
