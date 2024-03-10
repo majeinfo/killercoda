@@ -10,11 +10,12 @@
 - 008-deploy-error: wrong Deployment definition
 - 009-deploy-error: rogue hpa
 - 010-pod-error: missing label on Node
-- 011-pod-error: missing toleraion on Pod
+- 011-pod-error: missing toleration on Pod
 - 012-pod-error: missing envvar (needs to get the logs)
 - 013-ds-error: missing Pod in DaemonSet
 - 014-svc-error: wrong Service definition
 - 015-node-error: controlplane is cordoned !
+- 016-node-error: DiskPressure !
 - 100-pod-error: upgrade priorityClassName
 - 101-pod-error: play with podAntiAffinity
 - 102-config-error: wrong Base64 secret
