@@ -1,6 +1,6 @@
 # Unprivileged user can access PKI !
 
-useradd -m user1
+useradd -m -s /bin/bash user1
 
 # Create certificate for user1
 cd /home/user1
@@ -22,15 +22,9 @@ keyUsage=keyEncipherment,dataEncipherment
 extendedKeyUsage=serverAuth,clientAuth
 EOF
 
-
-cat <<EOF | kubectl apply -f -
-EOF
-
 openssl req -config ./csr.cnf -new -key user1.key  -nodes -out user1.csr
 
-CONTENT=$(cat user1.csr)
-
-cat <<EOF | kubectl apply -f -
+cat <<EOF >csr.yml
 apiVersion: certificates.k8s.io/v1
 kind: CertificateSigningRequest
 metadata:
@@ -40,7 +34,11 @@ spec:
   groups:
   - system:authenticated
   request: |
-    ${CONTENT} 
+EOF
+
+cat user1.csr | sed 's/^/    /' >>csr.yml
+
+cat <<EOF >>csr.yml
   usages:
   - digital signature
   - key encipherment
@@ -48,7 +46,6 @@ spec:
   - client auth
 EOF
 
-sleep 2
 kubectl certificate approve user1_csr
 kubectl get csr user1_csr -o jsonpath='{.status.certificate}' | base64 --decode > user1.crt
 kubectl create ns dev
