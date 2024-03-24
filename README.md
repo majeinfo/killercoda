@@ -23,3 +23,5 @@
 - 104-netpol-error: a netpol denies access to the DB
 - 105-ingress-error: wrong ingress rule and service
 - 106-custom-controller-error: wrong RBAC for cuscon
+- 107-scheduler-error: wrong scheduler manifest !
+- 200-security-error: access PKI from a container
