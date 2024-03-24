@@ -16,6 +16,7 @@
 - 014-svc-error: wrong Service definition
 - 015-node-error: controlplane is cordoned !
 - 016-node-error: DiskPressure !
+- 017-kubeconfig-error: cannot manage the cluster
 - 100-pod-error: upgrade priorityClassName
 - 101-pod-error: play with podAntiAffinity
 - 102-config-error: wrong Base64 secret
