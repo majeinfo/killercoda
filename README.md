@@ -24,4 +24,5 @@
 - 105-ingress-error: wrong ingress rule and service
 - 106-custom-controller-error: wrong RBAC for cuscon
 - 107-scheduler-error: wrong scheduler manifest !
+- 108-node-not-ready: why is this node not ready (bad kubelet conf)
 - 200-security-error: access PKI from a container
