@@ -27,3 +27,4 @@
 - 107-scheduler-error: wrong scheduler manifest !
 - 108-node-not-ready: why is this node not ready (bad kubelet conf)
 - 200-security-error: access PKI from a container
+- 201-cel-validation-error: image not allowed by the validatingadmissionpolicy

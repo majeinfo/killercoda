@@ -1,5 +1,5 @@
 cat <<EOF | kubectl apply -f -
-apiVersion: admissionregistration.k8s.io/v1alpha1
+apiVersion: admissionregistration.k8s.io/v1
 kind: ValidatingAdmissionPolicy
 metadata:
   name: image-tag-latest
@@ -24,7 +24,7 @@ spec:
 EOF
 
 cat <<EOF | kubectl apply -f -
-apiVersion: admissionregistration.k8s.io/v1alpha1
+apiVersion: admissionregistration.k8s.io/v1
 kind: ValidatingAdmissionPolicyBinding
 metadata:
   name: image-tag-latest
