@@ -1,0 +1,24 @@
+{
+  "title": "#201 - What's wrong with that Deployment ?",
+  "description": "Why can't I create such a Deployment ?",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      { 
+        "title": "You must create a specific Deployment", 
+	"text": "step1/text.md",
+        "foreground": "step1/foreground.sh",
+        "background": "step1/background.sh",
+        "verify": "step1/verify.sh"	
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}

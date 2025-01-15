@@ -1,0 +1,2 @@
+Check the presence of objects of type ValidatingAdmissionPolicies or validatingAdmissionPolicyBindings !
+...and remove them (or at least the Binding one)
