@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ stat /tmp/ca.key ]; then
+if stat /tmp/ca.key; then
 	exit 1
 fi
 
