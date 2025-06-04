@@ -2,7 +2,7 @@
 
 cat <<EOF | kubectl apply -f -
 apiVersion: scheduling.k8s.io/v1
-description: Pod with medium priority
+description: Pod with high priority
 kind: PriorityClass
 metadata:
   generation: 1
@@ -35,9 +35,9 @@ spec:
     name: nginx
     resources:
       limits:
-        memory: 512Mi
+        memory: 1024Mi
       requests:
-        memory: 512Mi
+        memory: 1024Mi
   priorityClassName: medium
   restartPolicy: Always
 EOF
@@ -55,9 +55,9 @@ spec:
     name: nginx
     resources:
       limits:
-        memory: 512Mi
+        memory: 1024Mi
       requests:
-        memory: 512Mi
+        memory: 1024Mi
   priorityClassName: medium
   restartPolicy: Always
 EOF
