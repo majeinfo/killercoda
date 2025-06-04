@@ -1,4 +1,6 @@
 Use the "pod-web.yml" file to run the "web" Pod which starts a containerized nginx server...
 It seems something fails.  Can you fix it ?
 
+Before solving the problem you must wait for both pods "pod1" and "pod2" are running.
+
 Note: you **must not** delete any existing Pod by yourself...
