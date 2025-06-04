@@ -38,7 +38,7 @@ spec:
         memory: 1024Mi
       requests:
         memory: 1024Mi
-  priorityClassName: high
+  priorityClassName: medium
   restartPolicy: Always
 EOF
 
@@ -58,7 +58,7 @@ spec:
         memory: 768Mi
       requests:
         memory: 768Mi
-  priorityClassName: high
+  priorityClassName: medium
   restartPolicy: Always
 EOF
 
