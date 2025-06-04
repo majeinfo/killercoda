@@ -55,9 +55,9 @@ spec:
     name: nginx
     resources:
       limits:
-        memory: 1024Mi
+        memory: 768Mi
       requests:
-        memory: 1024Mi
+        memory: 768Mi
   priorityClassName: high
   restartPolicy: Always
 EOF
